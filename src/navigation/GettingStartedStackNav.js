@@ -9,12 +9,12 @@ import GettingStartedScreen from "../screens/GettingStartedScreen";
 const Stack = createStackNavigator();
 
 const GettingStartedNav = () => (
-  <Stack.Navigator>
-    <Stack.Screen
-      name="Welcome"
-      component={WelcomeScreen}
-      options={{ headerShown: false }}
-    />
+  <Stack.Navigator
+    screenOptions={{
+      headerShown: false,
+    }}
+  >
+    <Stack.Screen name="Welcome" component={WelcomeScreen} />
     <Stack.Screen name="What is React Native" component={DefinitionScreen} />
     <Stack.Screen name="How It Works" component={HowItWorksScreen} />
     <Stack.Screen name="Meet the Competition" component={ComparisonScreen} />

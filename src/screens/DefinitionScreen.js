@@ -107,7 +107,6 @@ const styles = StyleSheet.create({
     borderBottomColor: "lightgray",
     borderBottomWidth: 2,
     borderBottomEndRadius: 10,
-    height: 70,
     justifyContent: "center",
     alignItems: "center",
   },

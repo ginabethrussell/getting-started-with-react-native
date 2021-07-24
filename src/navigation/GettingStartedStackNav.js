@@ -17,7 +17,10 @@ const GettingStartedNav = () => (
     <Stack.Screen name="Welcome" component={WelcomeScreen} />
     <Stack.Screen name="What is React Native" component={DefinitionScreen} />
     <Stack.Screen name="How It Works" component={HowItWorksScreen} />
-    <Stack.Screen name="Meet the Competition" component={ComparisonScreen} />
+    <Stack.Screen
+      name="Challenges and Competition"
+      component={ComparisonScreen}
+    />
     <Stack.Screen name="Getting Started" component={GettingStartedScreen} />
   </Stack.Navigator>
 );

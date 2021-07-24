@@ -73,8 +73,7 @@ const HowItWorksScreen = ({ navigation }) => {
             </View>
             <View style={{ flex: 1 }}>
               <Text style={styles.stepText}>
-                JavaScript code is not compiled. It runs on a special thread
-                hosted by React Native
+                JavaScript code runs on a special thread hosted by React Native
               </Text>
             </View>
             <View style={styles.stepWrapper}>
@@ -87,8 +86,8 @@ const HowItWorksScreen = ({ navigation }) => {
             </View>
             <View style={{ flex: 1 }}>
               <Text style={styles.stepText}>
-                JavaScript code runs on a virtual machine connected by a Bridge
-                to Native Platform components, platform modules, and apis
+                JavaScript code is connected by a Bridge to Native Platform
+                components, platform modules, and APIs
               </Text>
             </View>
           </View>
@@ -104,7 +103,7 @@ const HowItWorksScreen = ({ navigation }) => {
         </View>
         <TouchableOpacity
           style={styles.nextButton}
-          onPress={() => navigation.navigate("Meet the Competition")}
+          onPress={() => navigation.navigate("Challenges and Competition")}
         >
           <Text style={styles.nextButtonText}>Next</Text>
           <Ionicons name="arrow-forward-outline" size={24} color="white" />

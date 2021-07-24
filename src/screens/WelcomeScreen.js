@@ -55,19 +55,17 @@ const WelcomeScreen = ({ navigation }) => {
             </Unorderedlist>
           </TouchableOpacity>
           <TouchableOpacity
-            onPress={() => navigation.navigate("Meet the Competition")}
+            onPress={() => navigation.navigate("Challenges and Competition")}
           >
             <Unorderedlist style={styles.bulletItem}>
-              <Text style={styles.bulletText}>Its Competition</Text>
+              <Text style={styles.bulletText}>Challenges & Competition</Text>
             </Unorderedlist>
           </TouchableOpacity>
           <TouchableOpacity
             onPress={() => navigation.navigate("Getting Started")}
           >
             <Unorderedlist style={styles.bulletItem}>
-              <Text style={styles.bulletText}>
-                and How to Build Your First App
-              </Text>
+              <Text style={styles.bulletText}>How to Build Your First App</Text>
             </Unorderedlist>
           </TouchableOpacity>
         </View>

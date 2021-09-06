@@ -20,7 +20,7 @@ const WelcomeScreen = ({ navigation }) => {
   return (
     <View style={styles.screenwrapper}>
       <ScrollView showsVerticalScrollIndicator={false}>
-        <Text style={styles.title}>Welcome to Awesome React Native</Text>
+        <Text style={styles.title}>Getting Started with React Native</Text>
         <View
           style={{
             width: "100%",
@@ -37,7 +37,7 @@ const WelcomeScreen = ({ navigation }) => {
               width: 200,
               height: 200,
             }}
-            source={require("../../assets/296-react-logo.json")}
+            source={require("../../../assets/296-react-logo.json")}
           />
         </View>
         <Text style={styles.listHeader}>Explore this section to learn: </Text>
@@ -65,7 +65,7 @@ const WelcomeScreen = ({ navigation }) => {
             onPress={() => navigation.navigate("Getting Started")}
           >
             <Unorderedlist style={styles.bulletItem}>
-              <Text style={styles.bulletText}>How to Build Your First App</Text>
+              <Text style={styles.bulletText}>Build Your First App</Text>
             </Unorderedlist>
           </TouchableOpacity>
         </View>

@@ -7,7 +7,7 @@ import {
   StyleSheet,
 } from "react-native";
 
-import BackButtonHeader from "../components/BackButtonHeader";
+import BackButtonHeader from "../../components/BackButtonHeader";
 import { Ionicons } from "@expo/vector-icons";
 import LottieView from "lottie-react-native";
 
@@ -97,7 +97,7 @@ const HowItWorksScreen = ({ navigation }) => {
               width: 200,
               height: 200,
             }}
-            source={require("../../assets/howitworks.json")}
+            source={require("../../../assets/howitworks.json")}
           />
         </View>
         <View style={{ flexDirection: "row", justifyContent: "space-between" }}>

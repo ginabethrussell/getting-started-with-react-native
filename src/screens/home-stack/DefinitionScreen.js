@@ -6,11 +6,10 @@ import {
   Image,
   TouchableOpacity,
   StyleSheet,
-  Linking,
 } from "react-native";
 
-import popularApps from "../../assets/popularApps.png";
-import BackButtonHeader from "../components/BackButtonHeader";
+import popularApps from "../../../assets/popularApps.png";
+import BackButtonHeader from "../../components/BackButtonHeader";
 import { Ionicons } from "@expo/vector-icons";
 
 const DefinitionScreen = ({ navigation }) => {

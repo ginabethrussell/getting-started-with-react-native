@@ -1,14 +1,14 @@
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
-import WelcomeScreen from "../screens/WelcomeScreen";
-import DefinitionScreen from "../screens/DefinitionScreen";
-import HowItWorksScreen from "../screens/HowItWorksScreen";
-import ComparisonScreen from "../screens/ComparisonScreen";
-import GettingStartedScreen from "../screens/GettingStartedScreen";
+import WelcomeScreen from "../screens/home-stack/WelcomeScreen";
+import DefinitionScreen from "../screens/home-stack/DefinitionScreen";
+import HowItWorksScreen from "../screens/home-stack/HowItWorksScreen";
+import ComparisonScreen from "../screens/home-stack/ComparisonScreen";
+import GettingStartedScreen from "../screens/home-stack/GettingStartedScreen";
 
 const Stack = createStackNavigator();
 
-const GettingStartedNav = () => (
+const HomeStackNav = () => (
   <Stack.Navigator
     screenOptions={{
       headerShown: false,
@@ -25,4 +25,4 @@ const GettingStartedNav = () => (
   </Stack.Navigator>
 );
 
-export default GettingStartedNav;
+export default HomeStackNav;

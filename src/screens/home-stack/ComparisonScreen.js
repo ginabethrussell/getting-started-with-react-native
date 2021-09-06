@@ -7,12 +7,12 @@ import {
   TouchableOpacity,
   Image,
 } from "react-native";
-import BackButtonHeader from "../components/BackButtonHeader";
+import BackButtonHeader from "../../components/BackButtonHeader";
 import { Ionicons } from "@expo/vector-icons";
-import Ionic from "../../assets/ionic.png";
-import Flutter from "../../assets/flutter.png";
-import Android from "../../assets/android.png";
-import Swift from "../../assets/swift.png";
+import Ionic from "../../../assets/ionic.png";
+import Flutter from "../../../assets/flutter.png";
+import Android from "../../../assets/android.png";
+import Swift from "../../../assets/swift.png";
 import Unorderedlist from "react-native-unordered-list";
 
 const ComparisonScreen = ({ navigation }) => (

@@ -9,12 +9,12 @@ import {
   ScrollView,
   TouchableOpacity,
 } from "react-native";
-import expoLogo from "../../assets/expo-logo.png";
-import GooglePlayBadge from "../../assets/google-play-badge.png";
-import AppleStoreBadge from "../../assets/appleAppStoreBadge.png";
+import expoLogo from "../../../assets/expo-logo.png";
+import GooglePlayBadge from "../../../assets/google-play-badge.png";
+import AppleStoreBadge from "../../../assets/appleAppStoreBadge.png";
 import { SimpleLineIcons } from "@expo/vector-icons";
 import { FontAwesome5 } from "@expo/vector-icons";
-import BackButtonHeader from "../components/BackButtonHeader";
+import BackButtonHeader from "../../components/BackButtonHeader";
 import { Ionicons } from "@expo/vector-icons";
 const GettingStartedScreen = ({ navigation }) => (
   <View style={{ flex: 1, alignItems: "center" }}>

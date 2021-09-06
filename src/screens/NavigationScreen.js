@@ -6,9 +6,11 @@ import LottieView from "lottie-react-native";
 
 const NavigationScreen = () => {
   let animation = React.createRef();
+  let animation2 = React.createRef();
 
   React.useEffect(() => {
     animation.current.play();
+    animation2.current.play();
   }, []);
 
   return (
@@ -103,7 +105,7 @@ const NavigationScreen = () => {
         }}
       >
         <LottieView
-          ref={animation}
+          ref={animation2}
           loop={true}
           style={{
             width: 200,

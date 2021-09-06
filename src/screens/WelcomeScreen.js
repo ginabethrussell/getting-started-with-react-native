@@ -155,7 +155,7 @@ const styles = StyleSheet.create({
     marginBottom: 20,
     backgroundColor: "#c01f29",
     borderRadius: 10,
-    width: 100,
+    width: 135,
     height: 35,
     paddingHorizontal: 5,
     flexDirection: "row",

@@ -10,10 +10,10 @@ const BackButtonHeader = ({ navigation, title, backgroundColor, color }) => (
     }}
   >
     <View style={{ flex: 1 }}>
-      <TouchableOpacity onPress={() => navigation.goBack()}>
+      <TouchableOpacity onPress={() => navigation.popToTop()}>
         <View style={styles.backButton}>
           <Ionicons name="chevron-back" size={24} color={color} />
-          <Text style={{ ...styles.backText, color }}>BACK</Text>
+          <Text style={{ ...styles.backText, color }}>Home</Text>
         </View>
       </TouchableOpacity>
     </View>
@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   backText: {
-    fontSize: 14,
+    fontSize: 16,
   },
   headerTitle: {
     fontSize: 18,

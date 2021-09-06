@@ -121,13 +121,22 @@ const ComparisonScreen = ({ navigation }) => (
           </Text>
         </Unorderedlist>
       </View>
-      <TouchableOpacity
-        style={styles.nextButton}
-        onPress={() => navigation.navigate("Getting Started")}
-      >
-        <Text style={styles.nextButtonText}>Next</Text>
-        <Ionicons name="arrow-forward-outline" size={24} color="white" />
-      </TouchableOpacity>
+      <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
+        <TouchableOpacity
+          style={styles.button}
+          onPress={() => navigation.navigate("How It Works")}
+        >
+          <Ionicons name="arrow-back-outline" size={24} color="white" />
+          <Text style={styles.buttonText}>Previous</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          style={styles.button}
+          onPress={() => navigation.navigate("Getting Started")}
+        >
+          <Text style={styles.buttonText}>Next</Text>
+          <Ionicons name="arrow-forward-outline" size={24} color="white" />
+        </TouchableOpacity>
+      </View>
     </ScrollView>
   </View>
 );
@@ -176,20 +185,20 @@ const styles = StyleSheet.create({
     height: 100,
     margin: 20,
   },
-  nextButton: {
+  button: {
     alignSelf: "flex-end",
     marginTop: 20,
     marginBottom: 20,
     backgroundColor: "#c01f29",
     borderRadius: 10,
-    width: 100,
+    width: 135,
     height: 35,
     paddingHorizontal: 5,
     flexDirection: "row",
     justifyContent: "space-around",
     alignItems: "center",
   },
-  nextButtonText: {
+  buttonText: {
     fontSize: 16,
     fontWeight: "bold",
     color: "#ffffff",

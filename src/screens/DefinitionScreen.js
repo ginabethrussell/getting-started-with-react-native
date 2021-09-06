@@ -86,13 +86,22 @@ const DefinitionScreen = ({ navigation }) => {
             />
           </View>
         </View>
-        <TouchableOpacity
-          style={styles.nextButton}
-          onPress={() => navigation.navigate("How It Works")}
-        >
-          <Text style={styles.nextButtonText}>Next</Text>
-          <Ionicons name="arrow-forward-outline" size={24} color="white" />
-        </TouchableOpacity>
+        <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
+          <TouchableOpacity
+            style={styles.button}
+            onPress={() => navigation.navigate("Welcome")}
+          >
+            <Ionicons name="arrow-back-outline" size={24} color="white" />
+            <Text style={styles.buttonText}>Previous</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={styles.button}
+            onPress={() => navigation.navigate("How It Works")}
+          >
+            <Text style={styles.buttonText}>Next</Text>
+            <Ionicons name="arrow-forward-outline" size={24} color="white" />
+          </TouchableOpacity>
+        </View>
       </ScrollView>
     </View>
   );
@@ -118,21 +127,21 @@ const styles = StyleSheet.create({
     marginHorizontal: 16,
     textAlign: "center",
   },
-  nextButton: {
+  button: {
     alignSelf: "flex-end",
     marginTop: 20,
     marginBottom: 20,
     backgroundColor: "#c01f29",
     borderRadius: 10,
-    width: 100,
+    width: 135,
     height: 35,
     paddingHorizontal: 5,
     flexDirection: "row",
     justifyContent: "space-around",
     alignItems: "center",
   },
-  nextButtonText: {
-    fontSize: 16,
+  buttonText: {
+    fontSize: 14,
     fontWeight: "bold",
     color: "#ffffff",
     textTransform: "uppercase",

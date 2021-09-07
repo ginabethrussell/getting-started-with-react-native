@@ -1,5 +1,12 @@
 import React from "react";
-import { ScrollView, View, Text, StyleSheet } from "react-native";
+import {
+  ScrollView,
+  View,
+  Text,
+  StyleSheet,
+  TouchableHighlight,
+  TouchableOpacity,
+} from "react-native";
 import LottieView from "lottie-react-native";
 import * as WebBrowser from "expo-web-browser";
 import {
@@ -26,6 +33,10 @@ const HelpScreen = () => {
           justifyContent: "center",
           alignItems: "center",
           backgroundColor: "white",
+          marginHorizontal: 20,
+          borderColor: "#c01f29",
+          borderWidth: 3,
+          marginBottom: 20,
         }}
       >
         <LottieView
@@ -38,7 +49,12 @@ const HelpScreen = () => {
           source={require("../../assets/help.json")}
         />
       </View>
-      <View style={{ marginBottom: 30, marginHorizontal: 20 }}>
+      <View
+        style={{
+          marginBottom: 30,
+          marginHorizontal: 20,
+        }}
+      >
         <View style={{ flexDirection: "row", alignItems: "center" }}>
           <SimpleLineIcons name="docs" size={24} color="#383838" />
           <Text style={styles.listHeader}>Documentation</Text>
@@ -49,6 +65,7 @@ const HelpScreen = () => {
         >
           Expo
         </Text>
+
         <Text
           style={styles.linkText}
           onPress={() =>

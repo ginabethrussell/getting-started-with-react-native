@@ -81,7 +81,7 @@ const StateManagementScreen = () => {
             )
           }
         >
-          More about React State & Props ...
+          More about State & Props ...
         </Text>
       </View>
       <View>
@@ -216,6 +216,7 @@ const styles = StyleSheet.create({
     color: "#c01f29",
     fontSize: 18,
     marginVertical: 10,
+    textTransform: "uppercase",
   },
   tutorialLink: {
     color: "#c01f29",

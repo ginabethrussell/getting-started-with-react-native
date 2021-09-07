@@ -4,7 +4,7 @@ import { Ionicons, MaterialCommunityIcons } from "@expo/vector-icons";
 import HomeStackNav from "./HomeStackNav";
 import NavigationScreen from "../screens/NavigationScreen";
 import StateManagementScreen from "../screens/StateManagementScreen";
-import DeviceFeaturesScreen from "../screens/DeviceFeaturesScreen";
+import HelpScreen from "../screens/HelpScreen";
 import DebuggingScreen from "../screens/DebuggingScreen";
 import PublishingScreen from "../screens/PublishingScreen";
 
@@ -22,9 +22,8 @@ const MainTabNav = () => (
           iconName = focused ? "directions" : "directions";
         } else if (route.name === "State Management") {
           iconName = focused ? "database" : "database";
-        } else if (route.name === "Native Device Features") {
-          iconName = focused ? "ios-map" : "ios-map-outline";
-          return <Ionicons name={iconName} size={30} color={color} />;
+        } else if (route.name === "Help") {
+          iconName = focused ? "help-rhombus" : "help-rhombus-outline";
         } else if (route.name === "Debugging") {
           iconName = focused ? "bug" : "bug-outline";
         } else if (route.name === "Publishing") {
@@ -54,12 +53,9 @@ const MainTabNav = () => (
     <Tab.Screen name="Getting Started" component={HomeStackNav} />
     <Tab.Screen name="Navigation" component={NavigationScreen} />
     <Tab.Screen name="State Management" component={StateManagementScreen} />
-    <Tab.Screen
-      name="Native Device Features"
-      component={DeviceFeaturesScreen}
-    />
     <Tab.Screen name="Debugging" component={DebuggingScreen} />
     <Tab.Screen name="Publishing" component={PublishingScreen} />
+    <Tab.Screen name="Help" component={HelpScreen} />
   </Tab.Navigator>
 );
 

@@ -234,7 +234,7 @@ const HelpScreen = () => {
           style={styles.linkText}
           onPress={() =>
             WebBrowser.openBrowserAsync(
-              "https://twitter.com/dan_abramov?source=user_profile---------------------------"
+              "https://twitter.com/dan_abramov"
             )
           }
         >

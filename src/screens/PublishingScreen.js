@@ -215,6 +215,9 @@ const styles = StyleSheet.create({
   docslink: {
     fontWeight: "bold",
     color: "#c01f29",
+    fontSize: 18,
+    marginVertical: 10,
+    textTransform: "uppercase",
   },
   tutorialLink: {
     color: "#c01f29",
